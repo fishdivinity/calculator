@@ -183,7 +183,8 @@ ui->outputBrowser->setText(outputBrowserString);
         else if(*operatorDequeIterator1 == '%')
         {
             DEBUG
-            *figureDequeIterator2 = ((int)(*figureDequeIterator1)) % ((int)(*figureDequeIterator2));
+            //*figureDequeIterator2 = ((int)(*figureDequeIterator1)) % ((int)(*figureDequeIterator2));
+                    //*figureDequeIterator2 = (*figureDequeIterator1) % (*figureDequeIterator2);
             DEBUG
             figureDeque.erase(figureDequeIterator1);
             figureDequeIterator1=figureDequeIterator2;
